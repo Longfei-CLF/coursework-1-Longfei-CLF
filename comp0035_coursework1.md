@@ -36,7 +36,7 @@ If the marker cannot execute your coursework they can't grade it!
 
 ### Prepared data set
 Please add names of your data set files in this repository below, then delete this instruction text.
-[Original data set]()
+[Original data set](GVP_Eruption_Results.xls)
 [Prepared data set]()
 
 ### Data exploration
@@ -59,7 +59,8 @@ Issues blocking my progress (state ‘None’ if there are no issues):
 - item
 
 ### Report 1
-
+# Week 1
+# 
 ### Report 2
 
 ### Report 3
