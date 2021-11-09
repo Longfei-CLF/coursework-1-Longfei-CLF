@@ -7,14 +7,6 @@ Please add the URL to your repository below, then delete this instruction text.
 
 ### Set-up instructions
 
-Assume that requirements will be installed from requirements.txt.
-
-If you have used any libraries that require set-up beyond `pip install ...` then use this section to explain any set-up
-instructions to be followed to run your coursework.
-
-If the marker cannot execute your coursework they can't grade it!
-
-
 ## Selection of project methodology
 ### Methodology (or combination) selected
 
@@ -27,7 +19,9 @@ If the marker cannot execute your coursework they can't grade it!
 ### Target audience
 
 ### Questions to be answered using the dataset
-
+# 1. When is the next eruption for the chosen volcano?
+# 2. How long the eruption will last?
+# 3. How big is the eruption?
 
 ## Data preparation and exploration
 ### Data preparation
@@ -35,13 +29,12 @@ If the marker cannot execute your coursework they can't grade it!
 [Data Preparation](data_preparation.py)
 
 ### Prepared data set
-Please add names of your data set files in this repository below, then delete this instruction text.
-[Original data set](GVP_Eruption_Results.xls)
-[Prepared data set]()
+[Original data set](New_GVP_Eruption_Results.xlsx)
+[Prepared data set](Cleaned_GVP_Eruption_Results.xlsx)
 
 ### Data exploration
 
-[Data Exploration]()
+[Data Exploration](data_exploration.py)
 
 ## Weekly progress reports
 Copy and paste from Moodle or use the following structure. Delete this instruction text.
