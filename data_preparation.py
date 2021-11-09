@@ -28,14 +28,10 @@ def convert_to_xlsx():
 def prepare_data(df):
     """
     Prepare the original data
-    param:
-        df Dataframe the raw data
-    return:
-        The prepared data
-    rtype:
-        Dataframe
+    param: df Dataframe the raw data
+    return: The prepared data
+    rtype: Dataframe
     """
-
     print(df.columns)
     df.rename(columns={'Volcano Name':'Vol_name', 'Start Year':'Sta_yr', 
         'Start Month':'Sta_mo', 'Start Day':'Sta_dy', 'End Year':'End_yr', 
