@@ -8,7 +8,7 @@
 
 ### Methodology (or combination) selected
 A combination of Scrum and CRISP-DM is selected for this project.
-![Combination of Scrum and CRISP-DM](https://raw.githubusercontent.com/ucl-comp0035/coursework-1-Longfei-CLF/master/images/Combination%20of%20Scrum%20and%20CRISP-DM.png?token=AV7AOATIRSICCIBKVCKH4J3BRPE3A)
+![Combination of Scrum and CRISP-DM](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/e92e3650fcf8294d549752df8f1f3d7ba240ade2/images/Combination%20of%20Scrum%20and%20CRISP-DM.png)
 (Raj, 2018)
 
 #### What is Scrum?
