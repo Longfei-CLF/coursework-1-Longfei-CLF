@@ -290,18 +290,19 @@ Issues blocking my progress (state ‘None’ if there are no issues):
 
 ### Report 2
 What I did in the last week:
-- Problem statement
-- Draft persona
+- Research and finished the business need
+- Starting making the persona for the target audience
 
 What I plan to do in the next week:
 - Data preparation and exploring
+- Finish persona
 
 Issues blocking my progress (state ‘None’ if there are no issues): 'None'
 
 ### Report 3
 What I did in the last week:
-- Downloaded the data file
-- Tried to read it through Python
+- Successfully downloaded the data file
+- Tried to read it through Python but failed
 - Used beautifulsoup
 
 What I plan to do in the next week:
