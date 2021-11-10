@@ -9,6 +9,7 @@
 ### Methodology (or combination) selected
 A combination of Scrum and CRISP-DM is selected for this project.
 ![Combination of Scrum and CRISP-DM](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/e92e3650fcf8294d549752df8f1f3d7ba240ade2/images/Combination%20of%20Scrum%20and%20CRISP-DM.png)
+
 (Raj, 2018)
 
 #### What is Scrum?
@@ -24,7 +25,7 @@ A combination of Scrum and CRISP-DM is selected for this project.
 > CRISP-DM (CRoss-Industry Standard Process for Data Mining) is a model for data science cyclical process in 6 phases (Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation and Deployment). In addition, the entire process can be repeated for iterative deployments. (Abdollazadeh, 2021)
 
 #### How to combine them?
-Each phase of CRISP-DM can be aligned and integrated with Agile. An analytics project may be broken down into numerous Agile sprints, each of which uses all of the CRISP-DM stages but focuses on one or two of them. The first sprint, for example, is likely to concentrate on discovery: core business requirements, data availability and consolidation, present practises, and current performance. Making a basic model with only three inputs, for example, may be the next step. After that, one or two sprints can be dedicated to determining the appropriate model specification. The deployment structure may be fine-tuned and hardened in the final sprint. Each sprint, once again, touches on every aspect of CRISP-DM, but the major focus shifts. The project is time-boxed for each sprint and the final project deliverables in this agile format. There are review and cooperation sessions with important stakeholders scheduled for each sprint. Each builds on the previous's goods and lessons learned, resulting in a final product that the project stakeholders understand, approve, and own.
+Each stage of Scrum can be integrated with CRISP-DM. An analytics project may be broken down into numerous Scrum sprints, each of which uses all of the CRISP-DM stages. For example, the first sprint is likely to focus on discovery, including fundamental business needs, data availability and consolidation, current practises, and current performance. Making a basic model with only three inputs, for example, may be the next step. After that, one or two sprints can be dedicated to determining the appropriate model specification. The deployment structure may be fine-tuned and hardened in the final sprint. Each sprint covers every stage of CRISP-DM once more, although the main focus switches. In this agile approach, the project is time-boxed for each sprint and the final project deliverables. For each sprint, there will be review and collaboration sessions with key stakeholders. Each builds on the previous's goods and lessons learned, resulting in a final product that the project stakeholders understand, approve, and own.
 
 ### Selection criteria and justification of selection
 #### Criteria
