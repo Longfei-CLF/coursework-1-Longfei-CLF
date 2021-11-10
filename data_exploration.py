@@ -3,6 +3,10 @@ import numpy as np
 from numpy.lib.function_base import append
 import pandas as pd
 import matplotlib.pyplot as plt
+# Error meet when import matplotlib: ModuleNotFoundError: No module named 'matplotlib'
+# So I tried to install it, but got an error
+# Input: pip install matplotlib
+# Output: Requirement already satisfied: futures in /Users/Longfei/Library/Python/2.7/lib/python/site-packages (from tornado->matplotlib) (3.3.0)
 
 def xaxis_generation():
     """
@@ -11,9 +15,10 @@ def xaxis_generation():
     rtype: List
     """
     xaxis = []
-    for i in range (1700, 2021):
+    for i in range(1700, 2021):
         xaxis.append(i)
     return xaxis
+
 
 def Number_Eruptions(df, xaxis):
     """
@@ -36,7 +41,8 @@ def Number_Eruptions(df, xaxis):
     plt.ylabel("Number of Eruptions")
     plt.title("The relationship between Year and Number of Eruptions")
     plt.savefig('images/Number of Eruptions over Year.png')
-    
+
+
 def Eruption_Duration(df, xaxis):
     """
     Show the trend of eruptions duration verus time
@@ -52,31 +58,38 @@ def Eruption_Duration(df, xaxis):
         row = 0
         for x in df['Start Year']:
             if i == x:
-                day = df.loc[row,'Eruption Duration (d)']
+                day = df.loc[row, 'Eruption Duration (d)']
                 if day < 10000:
                     dur_with_Outliner.append(day)
                     dur_without_Outliner.append(day)
                 else:
                     dur_with_Outliner.append(day)
             row = row + 1
-        if sum(dur_with_Outliner) == 0: ErupDur_with_Outliner.append(0)
-        else: ErupDur_with_Outliner.append(np.mean(dur_with_Outliner))
-        if sum(dur_without_Outliner) == 0: ErupDur_without_Outliner.append(0)
-        else: ErupDur_without_Outliner.append(np.mean(dur_without_Outliner))        
+        if sum(dur_with_Outliner) == 0:
+            ErupDur_with_Outliner.append(0)
+        else:
+            ErupDur_with_Outliner.append(np.mean(dur_with_Outliner))
+        if sum(dur_without_Outliner) == 0:
+            ErupDur_without_Outliner.append(0)
+        else:
+            ErupDur_without_Outliner.append(np.mean(dur_without_Outliner))
 
     plt.cla()
     plt.plot(xaxis, ErupDur_with_Outliner)
     plt.xlabel("Eruption Start Year")
     plt.ylabel("Eruption Durations (d)")
-    plt.title("The relationship between Year and Eruption Durations (with outliners)")
+    plt.title(
+        "The relationship between Year and Eruption Durations (with outliners)")
     plt.savefig('images/Eruptions Durations over Year with outliners.png')
 
     plt.cla()
     plt.plot(xaxis, ErupDur_without_Outliner)
     plt.xlabel("Eruption Start Year")
     plt.ylabel("Eruption Durations (d)")
-    plt.title("The relationship between Year and Eruption Durations (without outliners)")
+    plt.title(
+        "The relationship between Year and Eruption Durations (without outliners)")
     plt.savefig('images/Eruptions Durations over Year without outliners.png')
+
 
 def VEI(df, xaxis):
     """
@@ -92,10 +105,12 @@ def VEI(df, xaxis):
 
         for x in df['Start Year']:
             if i == x:
-                index.append(df.loc[row,'Volcano Eruption Index (VEI)'])
+                index.append(df.loc[row, 'Volcano Eruption Index (VEI)'])
             row = row + 1
-        if sum(index) == 0: VEI.append(0)
-        else: VEI.append(np.mean(index))
+        if sum(index) == 0:
+            VEI.append(0)
+        else:
+            VEI.append(np.mean(index))
 
     plt.cla()
     plt.plot(xaxis, VEI)
@@ -104,17 +119,19 @@ def VEI(df, xaxis):
     plt.title("The relationship between Year and VEI")
     plt.savefig('images/VEI over Year.png')
 
+
 if __name__ == '__main__':
     cleaned_file = "Cleaned_GVP_Eruption_Results.xlsx"
     df = pd.read_excel(cleaned_file)
-    df.rename(columns={'Sta_yr':'Start Year', 'Erup_dur': 'Eruption Duration (d)',
-        'VEI': 'Volcano Eruption Index (VEI)'}, inplace=True)
-    #Basic stat
+    df.rename(columns={'Sta_yr': 'Start Year', 'Erup_dur': 'Eruption Duration (d)',
+                       'VEI': 'Volcano Eruption Index (VEI)'}, inplace=True)
+    # Basic stat
     print(df.describe())
     # Outliners
     df.plot.box(subplots=True)
     plt.show()
-    print(df.loc[df['Eruption Duration (d)'] > 10000]) # No need to drop, reasonable outliners
+    # No need to drop, reasonable outliners
+    print(df.loc[df['Eruption Duration (d)'] > 10000])
     # Plot graph to anwer the three questions
     Year = xaxis_generation()
     Number_Eruptions(df, Year)
