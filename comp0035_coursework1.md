@@ -2,13 +2,14 @@
 
 ## Technical information
 ### Repository URL
-Please add the URL to your repository below, then delete this instruction text.
-[Repository]()
-
-### Set-up instructions
+[Repository](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF.git)
 
 ## Selection of project methodology
+
+
 ### Methodology (or combination) selected
+
+
 
 ### Selection criteria and justification of selection
 
@@ -19,7 +20,7 @@ Please add the URL to your repository below, then delete this instruction text.
 ### Target audience
 
 ### Questions to be answered using the dataset
-# 1. When is the next eruption for the chosen volcano?
+# 1. When is the next eruption?
 # 2. How long the eruption will last?
 # 3. How big is the eruption?
 
