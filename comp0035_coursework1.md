@@ -252,10 +252,10 @@ Volcanoes are difficult to compare with other natural disasters such as floods. 
 > VEI: Volcano Eruption Index, a measure of explosive magnitude for historical volcanism (Newhall & Self, 1982)
 
 ### Target audience
+Potential users are mainly researchers such as geologists from government, companies or universities who are looking to access some historical volcanic eruption data to provide a base data trend for their prediction models to improve the accuracy of their predictions. More accurate predictions can save a lot of damage and protect the general public.
 
-
-
-
+The persona is developed to better describe the target audience.
+![Persona](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/357c2d45264ecaa7a37cef2a1685f9fe9a86b937/images/Persona.png)
 
 ### Questions to be answered using the dataset
 1. How does the number of eruptions changed over time?
