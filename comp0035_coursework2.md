@@ -1,10 +1,11 @@
 # Coursework 2
 
-Most students will use the same repository for coursework 2. You may use this file to present the results of that
-coursework if you wish. Alternatively you can use video or audio to provide the explanations instead of writing them.
-
 ## Requirements definition and analysis
 The term 'requirements' is used in the broader sense, user stories and/or use cases may be used.
+
+
+
+
 ### Requirements identification methods
 
 ### Requirement specification method
@@ -13,6 +14,7 @@ The term 'requirements' is used in the broader sense, user stories and/or use ca
 
 ### Documented and prioritised requirements
 Link to the full list of documented and prioritised requirements.
+#### 1. Allow users to tailor visualisations and save their preferences
 
 
 ## Design
