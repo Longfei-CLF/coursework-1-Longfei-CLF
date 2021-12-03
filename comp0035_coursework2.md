@@ -14,6 +14,8 @@ BABOK
 2. Document Analysis
   Elicit REQ through the study of the available DOC of existing and comparable solutions, and identify relevants INFO
   https://babokpage.wordpress.com/techniques/document-analysis/
+3. Interview
+  
 ### Requirement specification method
 User stories because of the 
 ### Prioritisation method
@@ -46,7 +48,7 @@ Link to the full list of documented and prioritised requirements.
 
 ## Design
 ### Structure and flow of the interface
-1. How should we perform the flow of the interface
+1. How syyhhould we perform the flow of the interface
 
 ### Relational database design
 
