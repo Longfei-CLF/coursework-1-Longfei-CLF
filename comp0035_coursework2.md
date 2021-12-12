@@ -40,6 +40,7 @@ US05: As a geologist I want to be able to register and login with my eduaction a
 
 Non-functional
 1. Successful login
+2. Fluent experience
 
 Link to the full list of documented and prioritised requirements.
 
