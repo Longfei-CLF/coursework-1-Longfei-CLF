@@ -35,7 +35,6 @@ The app will send eruption alert according to the volcano prediction model to th
 The context diagram is used to visualise the interactions between the stakeholders, data repository and the app.
 ![Context diagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/d658c8cbc75b3b0ec1ecf63c1d4082a85a26c827/images/Context%20diagram.png)
 ### Documented and prioritised requirements
-Considering 
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
  <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:4.25pt">
@@ -526,10 +525,15 @@ Considering
  </tr>
 </tbody></table>
 
+Considering the non-functional requirements are essential for the app use and it allows more tagert audience to access it, it is given 35 points in total. US01 is about the eruption alert which is important for protecting the resident's lives. Therefore US01 costs more points than US02. For US03, it only requires a search function which is easy to build up and costs less time than others. People can use this function in a very short period of time. For US04-US06, these are basic interactive functions for the app, it allows the scientists to carry on the simple research and the residents to receive the alerts. For US07-US10, these are advanced functions of the app and can be developed in the future. Some requirements can be substituted with other apps but less convenient for the users. For example, when the user need to translate some observations, he/she can copy the content and paste in the external translator like Google translate. It is less convenient compared with internal translation API. It is not essential but could have in the future.
 
 ## Design
 ### Structure and flow of the interface
-1. 
+The interface will be designed as a desktop screen because it is easier for users to read the information and analyse data trend. The size will be 1920*1080 because it is currently the most popular screen resolution (23%) worldwide. (Desktop Screen Resolution Stats Worldwide, 2021)
+
+The non-functional requirements (US01 & US02) will not be included in the interface design.
+
+US
 
 ### Relational database design
 
