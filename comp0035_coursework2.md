@@ -534,10 +534,30 @@ The interface will be designed as a desktop screen because it is easier for user
 The non-functional requirements (US01 & US02) will not be included in the interface design.
 
 The figure below shows the interface interactions and the flow of information.
-![InformationFlow](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/d797fb7003a221eb971113372af324af26ef24c3/images/Information%20flow.png)
+![InformationFlow](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Information%20flow.png)
 
 **Home page (Fig. 1)**
 ![Frame1](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/d797fb7003a221eb971113372af324af26ef24c3/images/Frame1.png)
+
+**Register/Login (Fig. 2)**
+![Frame2](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame2.png)
+**Search results & Volcano information (Fig. 3)**
+![Frame3](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame3.png)
+**Volcano stats (Fig. 4)**
+![Frame4](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame4.png)
+**Revelant observations/research (Fig. 5)**
+![Frame5](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame5.png)
+**Share observations/research (Fig. 6)**
+![Frame6](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame6.png)
+**Stats preferences (Fig. 7)**
+![Frame7](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame7.png)
+**Observation/research history (Fig. 8)**
+![Frame8](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame8.png)
+**Manage notifications subscriptions (Fig. 9)**
+![Frame9](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame9.png)
+**Manage account details (Fig. 10)**
+![Frame10](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame10.png)
+
 
 ### Relational database design
 
