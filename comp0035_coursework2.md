@@ -28,7 +28,7 @@ MoSCoW
 
 ### Context diagram
 The context diagram is used to visualise the interactions between the stakeholders, data repository and the app.
-![Context diagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/e92e3650fcf8294d549752df8f1f3d7ba240ade2/images/Context%20diagram.png)
+![Context diagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/d658c8cbc75b3b0ec1ecf63c1d4082a85a26c827/images/Context%20diagram.png)
 ### Documented and prioritised requirements
 
 
