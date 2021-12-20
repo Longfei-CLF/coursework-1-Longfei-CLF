@@ -1,23 +1,17 @@
 # Coursework 2
 
 ## Major changes in target audience
-
 After CW1, the target audience is changed because I have a clearer vision about the scope and use of the Volcano app. Now there are two different categories of the web users.
+### Category I: Researchers
+Researchers such as geologists from government, companies or universities who are looking to access some historical volcanic eruption data to provide a base data trend for their prediction models to improve the accuracy of their predictions. More accurate predictions can save a lot of damage and protect the residents lived near volcano.
 
-###Category I: Researchers
-Mainly researchers such as geologists from government, companies or universities who are looking to access some historical volcanic eruption data to provide a base data trend for their prediction models to improve the accuracy of their predictions. More accurate predictions can save a lot of damage and protect the residents lived near volcano.
-
-###Category II: Residents lived near volcano
-
-The app will send eruption alert to the residents once residents lived near volcano report some phenomenon like dust and ground vibrations or the statical model designed by the scientists have accurate predication. Meantime, the residents can also use the app to access the eruption data to simply know the trend of the volcano and the environment they lived with.
+### Category II: Residents lived near volcano
+The app will send eruption alert according to the volcano prediction model to the residents. Meantime, the residents lived near volcano report the daily monitoring like temperature rise and ground vibrations for scientific research. In addition, the residents can also use the app to access the eruption data to simply know the trend of the volcano and the environment they lived with.
 
 ## Requirements definition and analysis
-The term 'requirements' is used in the broader sense, user stories and/or use cases may be used.
-
-
-
 ### Requirements identification methods
 BABOK
+
 1. Brainstorming
   To foster creative thinking about a problem, producing numerous new ideas and to derive themes for further analysis
   https://babokpage.wordpress.com/techniques/brainstorming/
@@ -26,18 +20,17 @@ BABOK
   https://babokpage.wordpress.com/techniques/document-analysis/
 3. Interview
 4. Ki
-  
+
 ### Requirement specification method
-User stories because of the 
+User story is used to specify the requirements beacasue the project methodlogy selected is a combination of Scrum and CRISP-DM. User story is an important part in Agile method.
 ### Prioritisation method
 MoSCoW
 
+### Context diagram
+The context diagram is used to visualise the interactions between the stakeholders, data repository and the app.
+![Context diagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/e92e3650fcf8294d549752df8f1f3d7ba240ade2/images/Context%20diagram.png)
 ### Documented and prioritised requirements
-User story and requirements
-1. Dr. David, geologist
-Dr. David is a geologist in UCL. His research focused on the model of volocano activity and global warming. Everytime, he wants to figure out the trend of eruptions in his interested volcano. He has to repeat the procedure of downloading, cleaning and visualising data. It is quite time-consuming. If an app can prepare and visualise data on his perferred charts, he shall save a lot of time on repeating pre-research.
-2. Dr. Peter, US government scientist
-Dr. Peter is an US government scientist, he is responsible for monitoring the volocano in US and send volocano alerts to the government and residents when necessary. However he needs to review the data and investigate the volocano which has abnormal eruption trends.
+
 
 #### Charts
 US01: As a geologist I want to tailor and save my preferences of types of charts so that I can save time on preparing and visualizing data.
