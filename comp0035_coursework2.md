@@ -534,10 +534,10 @@ The interface will be designed as a desktop screen because it is easier for user
 The non-functional requirements (US01 & US02) will not be included in the interface design.
 
 The figure below shows the interface interactions and the flow of information.
-![InformationFlow]https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/d797fb7003a221eb971113372af324af26ef24c3/images/Information%20flow.png
+![InformationFlow](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/d797fb7003a221eb971113372af324af26ef24c3/images/Information%20flow.png)
 
 **Home page (Fig. 1)**
-![Frame1]https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/d797fb7003a221eb971113372af324af26ef24c3/images/Frame1.png
+![Frame1](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/d797fb7003a221eb971113372af324af26ef24c3/images/Frame1.png)
 
 ### Relational database design
 
