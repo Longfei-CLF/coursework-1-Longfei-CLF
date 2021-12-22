@@ -585,7 +585,7 @@ US06: After registration, user can change their details like contacts if they ne
 
 ### Application structure
 #### Models (Classes)
-![ClassDiagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/e40c821b2ea6ab2272652aed93209bdecb3a8365/images/Class%20diagram.png)
+![ClassDiagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/1e0791af4d2b98d632ba14504bdb3876a0805b3e/images/Class%20diagram.png)
 1. Scientists and Residents
 2. Report
 3. General Public
@@ -823,7 +823,8 @@ US06: After registration, user can change their details like contacts if they ne
  </tr>
 </tbody></table>
 ### Relational database design
-![ERD]()
+
+![ERD](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/1e0791af4d2b98d632ba14504bdb3876a0805b3e/images/ERD.png)
 
 1. Email_address and user_id
 
