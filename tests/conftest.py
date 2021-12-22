@@ -9,5 +9,5 @@ from user import User
 # Create a new general public user
 @pytest.fixture(scope='module')
 def user():
-   user = User(first_name='John', last_name='Smith', email='john@ucl.ac.uk', password='Password', dob = 'dateofbirth')
+   user = User(first_name='John', last_name='Smith', email='john@ucl.ac.uk', password='Password', dob = 'string')
    yield user

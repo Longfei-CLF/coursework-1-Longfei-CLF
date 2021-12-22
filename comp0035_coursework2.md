@@ -583,13 +583,13 @@ US06 & US04: As mentioned in 'Search results & Volcano information' page (Fig. 3
 ![Frame10](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame10.png)
 US06: After registration, user can change their details like contacts if they need.
 
-
 ### Application structure
 #### Models (Classes)
-![ClassDiagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame10.png)
+![ClassDiagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/e40c821b2ea6ab2272652aed93209bdecb3a8365/images/Class%20diagram.png)
 1. Scientists and Residents
 2. Report
 3. General Public
+
 #### Routes and controller functions
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
@@ -823,7 +823,9 @@ US06: After registration, user can change their details like contacts if they ne
  </tr>
 </tbody></table>
 ### Relational database design
+![ERD]()
 
+1. Email_address and user_id
 
 
 
