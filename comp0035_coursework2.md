@@ -538,40 +538,302 @@ The figure below shows the interface interactions and the flow of information.
 
 **Home page (Fig. 1)**
 ![Frame1](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/d797fb7003a221eb971113372af324af26ef24c3/images/Frame1.png)
+1. US06: User who want to share their observations or research is required to login or create a new account. If only view data and other information, account is not required.
+2. US03: User can use the search function to find data and other information about their interested volcano.
 
 **Register/Login (Fig. 2)**
 ![Frame2](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame2.png)
+US05: User from academic institutions can use SSO to login and share their research. For general public, they can register if they don't have an account.
+
 **Search results & Volcano information (Fig. 3)**
 ![Frame3](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame3.png)
+After the user enter and search a volcano, this page will be displayed. It includes many components like tabs or buttons. The default displayed tab is the volcano information. 
+3. US06: By subscribing the alert of the valcano, user is able to receive alerts of eruptions.
+4. US04: By subscribing the observations or research, user will be notified once there is any updates.
+5. US08: By clicking the 'Eruption Time' tab, it will show the data trend relates to the volcano.
+
 **Volcano stats (Fig. 4)**
 ![Frame4](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame4.png)
+When user switch the tab from 'Volcano information' to data like 'Eruption Time' and 'VEI', it will display the data visualisation.
+6. US08: User can save this chart as a preference after tailoring it.
+7. US09: User can choose to download the chart or the orginal data as image or data file respectively.
+
 **Revelant observations/research (Fig. 5)**
 ![Frame5](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame5.png)
+If user clicks 'Observation' on search page (Fig.3), the detailed observations will be displayed. It will show all the observations report relates to the volcano. If user clicks 'Research', similar interface will be displayed.
+8. US05 & US07: User can click the button to share their observations or research relates to the volcano. Then users all over the world can also view the content.
+
 **Share observations/research (Fig. 6)**
 ![Frame6](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame6.png)
+US05 & US07: User need to enter the title, content or any media if needed when they want to share their observations/research.
+
 **Stats preferences (Fig. 7)**
 ![Frame7](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame7.png)
+US08: As mentioned in 'Volcano stats' page (Fig. 4), the charts can be saved after the user made any changes. The charts saved will appear on this page which allow users to have a quicker access.
+
 **Observation/research history (Fig. 8)**
 ![Frame8](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame8.png)
+US05 & US07: As mentioned in 'Share observations/research' page, user can upload their own observations/research. All the content are summarized and the history can be viewed on this page.
+
 **Manage notifications subscriptions (Fig. 9)**
 ![Frame9](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame9.png)
+US06 & US04: As mentioned in 'Search results & Volcano information' page (Fig. 3), user can subscribe the eruption alerts and notifications from obersvations and research. On this page, user is able to manage all the notifications preferences and feel free to cancel the notifications.
+
 **Manage account details (Fig. 10)**
 ![Frame10](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame10.png)
+US06: After registration, user can change their details like contacts if they need.
 
-
-### Relational database design
 
 ### Application structure
+#### Models (Classes)
+![ClassDiagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame10.png)
+#### Routes and controller functions
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:9.95pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:9.95pt">
+  <p class="MsoNormal">Route<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:9.95pt">
+  <p class="MsoNormal">View description<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:9.95pt">
+  <p class="MsoNormal">Controller function<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;height:20.4pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.4pt">
+  <p class="MsoNormal">'/'<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.4pt">
+  <p class="MsoNormal">Home page (Fig. 1)<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.4pt">
+  <p class="MsoNormal"><span class="GramE">index(</span>) <o:p></o:p></p>
+  <p class="MsoNormal">Return the search page<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2;height:46.95pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:46.95pt">
+  <p class="MsoNormal">'/login'<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:46.95pt">
+  <p class="MsoNormal">Sign in or register a new account (Fig. 2)<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:46.95pt">
+  <p class="MsoNormal"><span class="GramE">Login(</span>)<o:p></o:p></p>
+  <p class="MsoNormal">Return errors if the account details are not correct. Otherwise
+  returns to the search page with logged in status.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;height:33.9pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:33.9pt">
+  <p class="MsoNormal">'/volcano/&lt; volcano_id &gt;'<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:33.9pt">
+  <p class="MsoNormal">Information for a specific volcano (Fig. 3)<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:33.9pt">
+  <p class="MsoNormal">Get_volcano(volcano_id)<o:p></o:p></p>
+  <p class="MsoNormal">Return errors if cannot find the volcano. Otherwise return
+  the information page. <o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4;height:54.35pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:54.35pt">
+  <p class="MsoNormal">'/volcano/&lt; volcano_id &gt;/&lt;data_set_id&gt;'<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:54.35pt">
+  <p class="MsoNormal">Dashboard for a specific data set of a specific volcano
+  (Fig. 4)<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:54.35pt">
+  <p class="MsoNormal">Display_<span class="GramE">Dash(</span>volcano_id, data_set)<o:p></o:p></p>
+  <p class="MsoNormal">Return errors if cannot match the volcano and data set.
+  Otherwise, return the data visualisation dashboard.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5;height:53.95pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:53.95pt">
+  <p class="MsoNormal">'/volcano/&lt; volcano_id &gt;/observations '<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:53.95pt">
+  <p class="MsoNormal">Observations for a specific volcano (Fig. 5)<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:53.95pt">
+  <p class="MsoNormal">Display_Obser(volcano_id)<o:p></o:p></p>
+  <p class="MsoNormal">Return errors if cannot match the volcano. Otherwise, return
+  the current observations and allow users to write and view<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:6;height:40.45pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">'/volcano/&lt; volcano_id &gt;/observations/create '<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">Create a new observation report for a specific volcano (Fig.
+  6)<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">Create_Obser(volcano_id)<o:p></o:p></p>
+  <p class="MsoNormal">Return errors if cannot match the volcano. Otherwise, allow
+  user to edit a new observation report.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:7;height:40.45pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">'/stats/&lt;user_id&gt;'<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">Saved charts for a specific user (Fig. 7)<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">Display_saved_dash(user_id)<o:p></o:p></p>
+  <p class="MsoNormal">Return error if cannot match the user id. Otherwise, display
+  all the charts saved by the user.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:8;height:47.4pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:47.4pt">
+  <p class="MsoNormal">'/share/&lt;user_id&gt;'<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:47.4pt">
+  <p class="MsoNormal">Observations and research uploading history for a specific
+  user (Fig. 8)<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:47.4pt">
+  <p class="MsoNormal">Display_share(user_id)<o:p></o:p></p>
+  <p class="MsoNormal">Return error if cannot match the user id. Otherwise, display
+  all the observations and research created by the user.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:9;height:40.45pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">'/manage_sub/&lt; user_id &gt;'<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">Subscriptions notifications for a specific user (Fig. 9)<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">Display_sub(user_id)<o:p></o:p></p>
+  <p class="MsoNormal">Return error if cannot match the user id. Otherwise, display
+  all the notifications subscribed by the user.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:10;mso-yfti-lastrow:yes;height:40.45pt">
+  <td width="307" valign="top" style="width:230.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">'/manage_account/&lt; user_id &gt;'<o:p></o:p></p>
+  </td>
+  <td width="345" valign="top" style="width:258.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">Account details for a specific user (Fig. 10)<o:p></o:p></p>
+  </td>
+  <td width="482" valign="top" style="width:361.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.45pt">
+  <p class="MsoNormal">Display_profile(user_id)<o:p></o:p></p>
+  <p class="MsoNormal">Return error if cannot match the user id. Otherwise, display
+  the user profile with data for the specific user.<o:p></o:p></p>
+  </td>
+ </tr>
+</tbody></table>
+### Relational database design
+
+
 
 
 ## Testing
 ### Choice of unit testing library
+Use pytest as the test library, and pytest-cov for coverage
 
 ### Tests
-The tests should be in a separate and appropriately named file/directory.
+test_calculate_age
+test_full_name
 
 ### Test results
-Provide evidence that the tests have been run and the results of the tests (e.g. screenshot).
+Provide
 
 ### Continuous integration (optional)
 Consider using GitHub Actions (or other) to establish a continuous integration pipeline. If you do so then please provide a link to the .yml and a screenshot of the results of a workflow run.
