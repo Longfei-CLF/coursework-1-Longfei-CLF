@@ -586,8 +586,8 @@ US06: After registration, user can change their details like contacts if they ne
 ### Application structure
 #### Models (Classes)
 ![ClassDiagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/1e0791af4d2b98d632ba14504bdb3876a0805b3e/images/Class%20diagram.png)
-1. Scientists and Residents: In the app, different roles have different functions. Scientists can share observations and research report but residents are only allowed to share observations report. In addition, scientists are verified through organization account and residents are verified through resident address. That's why they are seperated into two different classes and have different attributes.
-2. Report: There are two types of reports, observation and research. They share same attributes but differ from 'type'.
+1. **Scientists and Residents**: In the app, different roles have different functions. Scientists can share observations and research report but residents are only allowed to share observations report. In addition, scientists are verified through organization account and residents are verified through resident address. That's why they are seperated into two different classes and have different attributes.
+2. **Report**: There are two types of reports, observation and research. They share same attributes but differ from 'type'.
 
 #### Routes and controller functions
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
@@ -826,9 +826,9 @@ US06: After registration, user can change their details like contacts if they ne
 
 ![ERD](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/1e0791af4d2b98d632ba14504bdb3876a0805b3e/images/ERD.png)
 
-1. User: Because scientists and residents are types of users and they share simliar attributes, they can be stored in one enetity and differed from 'Role'.
-2. Report: Because observation and research are types of reports and they share simliar attributes, they can be stored in one enetity and differed from 'Type'.
-3. Notifications: Residents can subscribe volcano to receive eruption alert and scientists can subscribe reports to receive update notifications. Since alert and updates are types of notifications and they share same attributes, they can be stored in one entity and differed from 'Is_alert'.
+1. **User**: Because scientists and residents are types of users and they share simliar attributes, they can be stored in one enetity and differed from 'Role'.
+2. **Report**: Because observation and research are types of reports and they share simliar attributes, they can be stored in one enetity and differed from 'Type'.
+3. **Notifications**: Residents can subscribe volcano to receive eruption alert and scientists can subscribe reports to receive update notifications. Since alert and updates are types of notifications and they share same attributes, they can be stored in one entity and differed from 'Is_alert'.
 
 ## Testing
 ### Choice of unit testing library
@@ -898,7 +898,7 @@ Attempt to use GitHub Actions to establish a continuous integration pipeline.
 
 [.yml file](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/8c8af1a7b74010c10f6a9fd98e7a30da0c4ea898/.github/workflows/volcano-app.yml)
 
-![workflow]()
+![workflow](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/46cdeb69d0934a162dc7f800becea8b6fc56fa4f/images/Workflow.png)
 
 ## References
 Abdollazadeh, A. (A. (2021, May 18). Crisp-DM and agile-scrum methodology for Data Science Project Delivery. LinkedIn. Retrieved December 20, 2021, from https://www.linkedin.com/pulse/crisp-dm-agile-scrum-methodology-data-science-project-abdollazadeh/ 
