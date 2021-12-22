@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/Longfei/OneDrive - University College London/Longfei/Uni/CEng/Y3/Software engineering/coursework-1-Longfei-CLF/ll_venv"
+set -gx VIRTUAL_ENV "/Users/Longfei/OneDrive - University College London/Longfei/Uni/CEng/Y3/Software engineering/coursework-1-Longfei-CLF/venv_project"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
@@ -52,8 +52,8 @@ if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
         set -l old_status $status
 
         # Prompt override?
-        if test -n "(ll_venv) "
-            printf "%s%s" "(ll_venv) " (set_color normal)
+        if test -n "(venv_project) "
+            printf "%s%s" "(venv_project) " (set_color normal)
         else
             # ...Otherwise, prepend env
             set -l _checkbase (basename "$VIRTUAL_ENV")
