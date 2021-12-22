@@ -587,6 +587,9 @@ US06: After registration, user can change their details like contacts if they ne
 ### Application structure
 #### Models (Classes)
 ![ClassDiagram](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame10.png)
+1. Scientists and Residents
+2. Report
+3. General Public
 #### Routes and controller functions
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
@@ -826,7 +829,12 @@ US06: After registration, user can change their details like contacts if they ne
 
 ## Testing
 ### Choice of unit testing library
-Use pytest as the test library, and pytest-cov for coverage
+1. **Unittest**: Fast test collection and flexible test execution. 
+2. **PyTest**: Special and simple class fixture for making testing easier.
+3. **Doctest**: Python Interactive Shell for the command prompt and inclusive application.
+
+PyTest's straightforward syntax makes it easy to run tests, and it's useful for a variety of purposes, including functional and API testing. It also has the ability to execute any subset of tests in parallel. (Real Python, 2021) Pytest provides a fixture concept that is both powerful and easy, unlike any other testing framework like Doctest. It can ensure specific environment for a single test (Knapsack, 2021)  Compared with unittest, both frameworks are excellent for testing in Python. However, pytest is more user-friendly. Pytest's code is simple, concise, and efficient. We'll need to import modules, build a class, then specify the testing functions within that class for unittest. In the case of pytest, however, we simply need to define the testing method. Pytest is likewise a quick and efficient programme. (Raj & Python Pool, 2021) Since in this project, the team decide to use Scrum, an agile methodology, a simple unit testing library can help the team save time for each sprint. Therefore, I will use **pytest** as the test library, and **pytest-cov** for coverage.
+
 
 ### Tests
 [Fixture](conftest.py)
@@ -836,7 +844,6 @@ Use pytest as the test library, and pytest-cov for coverage
 [test_full_name](test_full_name.py)
 
 ### Test results
-![TestResults](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame10.png)
 ```Python
 Longfei@feifeifei coursework-1-Longfei-CLF % python3 -m pytest --cov-report term-missing --cov=tests/
 ====================================== test session starts ======================================
@@ -882,7 +889,7 @@ TOTAL                            19      0   100%
 FAILED tests/test_calculate_age.py::test_calculate_age - AssertionError: assert 'Age not calc....
 ================================== 1 failed, 1 passed in 2.01s ==================================
 ```
-It is evident that all the tests are passed completely except the test for age calculation. In the test results, only 50% lines are tested in age calculation function. In age calculation, 'if' is used to return different results depend on the input. The user created in the fixture fit one of the conditions (dob = None) and return one result. However, another result cannot be tested until date of birth is not equal to None.
+It is evident that the test for full name function is passed but the test for age calculation function failed because of incorrect input data. I use string instead of date for the data type of the date of birth which is a parameter in the function. It tests the scenario when the user enter letters instead of numbers. The function should validate the data type first and return data type error.
 ### Continuous integration (optional)
 Consider using GitHub Actions (or other) to establish a continuous integration pipeline. If you do so then please provide a link to the .yml and a screenshot of the results of a workflow run.
 
@@ -891,4 +898,12 @@ Abdollazadeh, A. (A. (2021, May 18). Crisp-DM and agile-scrum methodology for Da
 
 Desktop Screen Resolution Stats Worldwide. StatCounter Global Stats. (2021, October). Retrieved December 20, 2021, from https://gs.statcounter.com/screen-resolution-stats/desktop/worldwide 
 
+Doctest vs pytest comparison of testing frameworks what are the differences between Doctest and pytest? Doctest vs pytest comparison of testing frameworks. (2021). Retrieved December 22, 2021, from https://knapsackpro.com/testing_frameworks/difference_between/doctest/vs/pytest 
+
 Elicitation. BABOK Page. (2015, January 26). Retrieved December 20, 2021, from https://babokpage.wordpress.com/elicitation/ 
+
+Raj, R., &amp; Python Pool. (2021, June 28). Python unittest VS pytest: Choose the best. Python Pool. Retrieved December 22, 2021, from https://www.pythonpool.com/python-unittest-vs-pytest/ 
+
+Real Python. (2021, May 21). Getting started with testing in Python. Real Python. Retrieved December 22, 2021, from https://realpython.com/python-testing/#unit-tests-vs-integration-tests 
+
+Zenesys. (2021). Unit testing frameworks in Python. Zenesys. Retrieved December 22, 2021, from https://www.zenesys.com/blog/unit-testing-frameworks-in-python 
