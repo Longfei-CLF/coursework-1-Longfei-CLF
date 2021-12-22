@@ -835,7 +835,51 @@ Use pytest as the test library, and pytest-cov for coverage
 
 ### Test results
 ![TestResults](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame10.png)
+```Python
+Longfei@feifeifei coursework-1-Longfei-CLF % python3 -m pytest --cov-report term-missing --cov=tests/
+====================================== test session starts ======================================
+platform darwin -- Python 3.7.4, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /Users/Longfei/OneDrive - University College London/Longfei/Uni/CEng/Y3/Software engineering/coursework-1-Longfei-CLF
+plugins: cov-3.0.0
+collected 2 items                                                                               
 
+tests/test_calculate_age.py F                                                             [ 50%]
+tests/test_full_name.py .                                                                 [100%]
+
+=========================================== FAILURES ============================================
+______________________________________ test_calculate_age _______________________________________
+
+user =  John Smith john@ucl.ac.uk None
+
+    def test_calculate_age(user):
+        """
+        GIVEN the date of birth is a string
+        WHEN the users are passed to the age calculation function
+        THEN the result should be "Age not calculated, date of birth wrong"
+        """
+        age = User.calculate_age(user)
+>       assert age == "Age not calculated, date of birth wrong"
+E       AssertionError: assert 'Age not calc...birth unknown' == 'Age not calc...f birth wrong'
+E         - Age not calculated, date of birth wrong
+E         ?                                    -- -
+E         + Age not calculated, date of birth unknown
+E         ?                                   +++++
+
+tests/test_calculate_age.py:16: AssertionError
+
+---------- coverage: platform darwin, python 3.7.4-final-0 -----------
+Name                          Stmts   Miss  Cover   Missing
+-----------------------------------------------------------
+tests/conftest.py                 7      0   100%
+tests/test_calculate_age.py       6      0   100%
+tests/test_full_name.py           6      0   100%
+-----------------------------------------------------------
+TOTAL                            19      0   100%
+
+==================================== short test summary info ====================================
+FAILED tests/test_calculate_age.py::test_calculate_age - AssertionError: assert 'Age not calc....
+================================== 1 failed, 1 passed in 2.01s ==================================
+```
 It is evident that all the tests are passed completely except the test for age calculation. In the test results, only 50% lines are tested in age calculation function. In age calculation, 'if' is used to return different results depend on the input. The user created in the fixture fit one of the conditions (dob = None) and return one result. However, another result cannot be tested until date of birth is not equal to None.
 ### Continuous integration (optional)
 Consider using GitHub Actions (or other) to establish a continuous integration pipeline. If you do so then please provide a link to the .yml and a screenshot of the results of a workflow run.
