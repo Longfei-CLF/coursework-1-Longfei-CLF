@@ -894,7 +894,11 @@ FAILED tests/test_calculate_age.py::test_calculate_age - AssertionError: assert 
 ```
 It is evident that the test for full name function is passed but the test for age calculation function failed because of incorrect input data. I use string instead of date for the data type of the date of birth which is a parameter in the function. It tests the scenario when the user enter letters instead of numbers. The function should validate the data type first and return data type error.
 ### Continuous integration (optional)
-Consider using GitHub Actions (or other) to establish a continuous integration pipeline. If you do so then please provide a link to the .yml and a screenshot of the results of a workflow run.
+Attempt to use GitHub Actions to establish a continuous integration pipeline. 
+
+[.yml file](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/8c8af1a7b74010c10f6a9fd98e7a30da0c4ea898/.github/workflows/volcano-app.yml)
+
+![workflow]()
 
 ## References
 Abdollazadeh, A. (A. (2021, May 18). Crisp-DM and agile-scrum methodology for Data Science Project Delivery. LinkedIn. Retrieved December 20, 2021, from https://www.linkedin.com/pulse/crisp-dm-agile-scrum-methodology-data-science-project-abdollazadeh/ 
