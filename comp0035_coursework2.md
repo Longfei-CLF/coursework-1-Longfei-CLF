@@ -893,8 +893,9 @@ FAILED tests/test_calculate_age.py::test_calculate_age - AssertionError: assert 
 ================================== 1 failed, 1 passed in 2.01s ==================================
 ```
 It is evident that the test for full name function is passed but the test for age calculation function failed because of incorrect input data. I use string instead of date for the data type of the date of birth which is a parameter in the function. It tests the scenario when the user enter letters instead of numbers. The function should validate the data type first and return data type error.
+
 ### Continuous integration (optional)
-Attempt to use GitHub Actions to establish a continuous integration pipeline. 
+Attempt to use GitHub Actions to establish a continuous integration pipeline. The ability to automatically check the code and lint after each commits was very convenient and time saving. I am also notified of the results of the tests by email. I can also see the results of each test and the corresponding problems on the web page so that I can make changes in time.
 
 [.yml file](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/8c8af1a7b74010c10f6a9fd98e7a30da0c4ea898/.github/workflows/volcano-app.yml)
 
