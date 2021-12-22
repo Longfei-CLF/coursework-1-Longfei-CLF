@@ -829,22 +829,20 @@ US06: After registration, user can change their details like contacts if they ne
 Use pytest as the test library, and pytest-cov for coverage
 
 ### Tests
-test_calculate_age
-test_full_name
+[Fixture](conftest.py)
+[test_calculate_age](test_calculate_age.py)
+[test_full_name](test_full_name.py)
 
 ### Test results
-Provide
+![TestResults](https://github.com/ucl-comp0035/coursework-1-Longfei-CLF/blob/f00073d0189772198021dd7ba22da585a6f37dd8/images/Frame10.png)
 
+It is evident that all the tests are passed completely except the test for age calculation. In the test results, only 50% lines are tested in age calculation function. In age calculation, 'if' is used to return different results depend on the input. The user created in the fixture fit one of the conditions (dob = None) and return one result. However, another result cannot be tested until date of birth is not equal to None.
 ### Continuous integration (optional)
 Consider using GitHub Actions (or other) to establish a continuous integration pipeline. If you do so then please provide a link to the .yml and a screenshot of the results of a workflow run.
 
 ## References
+Abdollazadeh, A. (A. (2021, May 18). Crisp-DM and agile-scrum methodology for Data Science Project Delivery. LinkedIn. Retrieved December 20, 2021, from https://www.linkedin.com/pulse/crisp-dm-agile-scrum-methodology-data-science-project-abdollazadeh/ 
 
+Desktop Screen Resolution Stats Worldwide. StatCounter Global Stats. (2021, October). Retrieved December 20, 2021, from https://gs.statcounter.com/screen-resolution-stats/desktop/worldwide 
 
-
-Delete this instruction text before submitting:
-
-- Include references to any templates you have used.
-- If you justify any of your choices with references then remember to also include these.
-- Use any [referencing style](https://library-guides.ucl.ac.uk/referencing-plagiarism/referencing-styles) that you are
-  used to using in your course.
+Elicitation. BABOK Page. (2015, January 26). Retrieved December 20, 2021, from https://babokpage.wordpress.com/elicitation/ 
