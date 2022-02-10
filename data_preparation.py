@@ -47,7 +47,7 @@ def prepare_data(df):
     df = df[df['Eruption Category'] == 'Confirmed Eruption']
     final_cols = [
         'Vol_name', 'Sta_yr', 'Sta_mo', 'Sta_dy',
-        'End_yr', 'End_mo', 'End_dy', 'VEI', 'Latitude', 'Longitude']
+        'End_yr', 'End_mo', 'End_dy', 'VEI','Latitude', 'Longitude' ]
     df = df[final_cols]
 
     # Delete data earlier than 1700 due to limit of dtype (datetime64[ns]), 585 years (2^64 nanoseconds).
@@ -66,7 +66,7 @@ def prepare_data(df):
     df['Erup_dur'] = (df.End_date - df.Sta_date).dt.days
 
     df_prepared = pd.DataFrame(
-        df, columns=['Vol_name', 'Sta_yr', 'Erup_dur', 'VEI', 'Latitude', 'Longitude'])
+        df,columns=['Vol_name', 'Sta_yr', 'Erup_dur', 'VEI', 'Latitude', 'Longitude'])
     return df_prepared
 
 
