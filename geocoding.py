@@ -39,5 +39,3 @@ if __name__ == '__main__':
     print(df_geo.head())
 
     df_geo.to_excel('Geo_Eruption_Results.xlsx', index=False)
-
-
